@@ -7,7 +7,7 @@ class grammar:
     def load(self, path):
         try:
             self.rule = pd.read_csv(path, sep = " ", names=['pos1', 'pos2'])
-            print("[SUCCESS] load grammar")
+            #print("[SUCCESS] load grammar")
             return self.rule
         except:
             print("[ERROR] load grammar")
@@ -27,7 +27,7 @@ class dictionary:
     def load(self, path):
         try:
             self.data = pd.read_csv(path, sep = "/", names=['word', 'pos'])
-            print("[SUCCESS] load dictionary")
+            #print("[SUCCESS] load dictionary")
             return self.data
         except:
             print("[ERROR] load dictionary")
